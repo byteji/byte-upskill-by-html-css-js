@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> อย่าพิมพ์มานะ </title>
+    <link rel="stylesheet" href="cat.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+<h1 style="text-align: center; font-size :50px; font-family: serif;"> อย่าพิมพ์อะไรมานะ เตือนแล้วว </h1>
+<body>
+   
+    <form name="frmMain" action="" method="post" OnSubmit="return chkSubmit();">
+        <script language="JavaScript">
+            function chkSubmit() {
+                if (isNaN(document.frmMain.txtNumber.value)) {
+                    alert('กูว่าแล้วมึงต้องพิมพ์ รั้นอะเรา');
+                    return false;
+                }
+            }
+        </script>
+         <div style=" margin-top: 50px;margin-left: 600px;"> 
+        <input type ="text" name="txtNumber" value=""  >
+        <input type="submit" name="btnSubmit" value="ส่ง">
+    </div>
+    </form>
+
+</body>
+
+</html>
